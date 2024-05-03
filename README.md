@@ -1,8 +1,52 @@
-# React + Vite
+# BOT-BATTLE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### Date, 2024/05/03
 
-Currently, two official plugins are available:
+#### By _Philip Gerald Otieno_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
+
+It's a website that allow's users to browse through a list of robots, view a robot's details, and, enlist a bot into their army.
+
+As a user, you should be able to:
+
+See profiles of all bots rendered in BotCollection.
+
+Add an individual bot to my army by clicking on it. The selected bot should render in the YourBotArmy component. The bot can be enlisted only once. The bot does not disappear from the BotCollection.
+
+Release a bot from my army by clicking on it. The bot disappears from the YourBotArmy component.
+
+Discharge a bot from their service forever, by clicking the red button marked "x", which would delete the bot both from the backend and from the YourBotArmy on the frontend.
+
+Choose if I want to enlist a bot into my army or just see their data. Clicking on the card should instead display a show view (BotSpecs) for that bot, which should be on a new page i.e when a user clicks on the bot, it should redirect them to bots/:botId page. BotSpecs should have two buttons: one to go back to the list view and another to enlist that bot.
+
+## Installation
+
+You use git clone to be able to download the documents in GitHub
+
+## Installation Requirements
+
+Git
+
+### Installation instruction
+
+```
+Git clone git@github.com:reez-code/bank-of-flatiron.git
+
+```
+
+# Live Link
+
+none yet
+
+## Technologies used
+
+HTML
+CSS
+Tailwind
+React
+Javascript
+
+## Support and contact details
+
+github.com/reez-code
