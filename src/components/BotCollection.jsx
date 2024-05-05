@@ -5,7 +5,10 @@ function BotCollection({ botsData }) {
   console.log(botsData);
 
   return (
-    <div className="grid grid-cols-4 gap-4 my-10">
+    <div
+      className="grid grid-cols-4 gap-4 my-10"
+      onClick={(e) => console.log(e)}
+    >
       {botsData.map((bot) => (
         <BotCard key={bot.id} {...bot} />
       ))}

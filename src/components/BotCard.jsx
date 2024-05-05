@@ -13,13 +13,13 @@ function BotCard({ name, catchphrase, health, damage, armor, avatar_url }) {
         </div>
         <div className="px-6 pt-4 pb-2">
           <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-            {health}
+            ❤{health}
           </span>
           <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-            {damage}
+            💥{damage}
           </span>
           <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-            {armor}
+            🔰{armor}
           </span>
         </div>
       </div>
