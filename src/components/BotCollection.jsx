@@ -1,6 +1,6 @@
 import React from "react";
 
-function BotCollection() {
+function BotCollection({ botsData }) {
   return <div></div>;
 }
 
