@@ -37,7 +37,7 @@ Git clone git@github.com:reez-code/bank-of-flatiron.git
 
 # Live Link
 
-[Bot-Battle]("https://fastidious-melba-59f62c.netlify.app")
+[Bot-Battle](https://fastidious-melba-59f62c.netlify.app)
 
 ## Technologies used
 
