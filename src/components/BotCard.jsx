@@ -1,7 +1,33 @@
-function BotCard({ name, catchphrase, health, damage, armor, avatar_url }) {
+function BotCard({
+  name,
+  catchphrase,
+  health,
+  damage,
+  armor,
+  avatar_url,
+  id,
+  setSelectedBot,
+  selectedBot,
+}) {
   return (
     <>
-      <div className="max-w-sm rounded overflow-hidden shadow-lg ">
+      <div
+        className="max-w-sm rounded overflow-hidden shadow-lg bg-green-100"
+        onClick={() => {
+          setSelectedBot([
+            ...selectedBot,
+            {
+              id: id,
+              name: name,
+              health: health,
+              damage: damage,
+              armor: armor,
+              avatar_url: avatar_url,
+              catchphrase: catchphrase,
+            },
+          ]);
+        }}
+      >
         <img
           className="w-full h-[300px]"
           src={avatar_url}
