@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import YourBotArmy from "./components/YourBotArmy";
 import BotCollection from "./components/BotCollection";
-import BotCard from "./components/BotCard";
 
 function App() {
   const [bots, setBots] = useState([]);
@@ -12,12 +11,10 @@ function App() {
       .then((data) => setBots(data));
   }, []); //dependecy array
 
-  console.log(bots);
-
   return (
     <>
       <YourBotArmy />
-      <BotCard />
+      <BotCollection botsData={bots} />
     </>
   );
 }
