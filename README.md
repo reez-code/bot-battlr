@@ -37,7 +37,8 @@ Git clone git@github.com:reez-code/bank-of-flatiron.git
 
 # Live Link
 
-none yet
+Inorder for website to show content for now you need to fork and clone repo and run json server locally
+[Bot-Battle]("https://fastidious-melba-59f62c.netlify.app")
 
 ## Technologies used
 
