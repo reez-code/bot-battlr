@@ -9,7 +9,7 @@ function BotCard({
   setSelectedBot,
   selectedBot,
 }) {
-  function handleClick(selectedBot, setSelectedBot) {
+  function handleClick() {
     if (selectedBot.length === 0) {
       setSelectedBot([
         ...selectedBot,
@@ -44,7 +44,7 @@ function BotCard({
     <>
       <div
         className="max-w-sm rounded overflow-hidden shadow-lg bg-green-100"
-        onClick={() => handleClick(selectedBot, setSelectedBot)}
+        onClick={handleClick}
       >
         <img
           className="w-full h-[300px]"
