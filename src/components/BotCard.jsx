@@ -1,3 +1,5 @@
+import YourBotArmy from "./YourBotArmy";
+
 function BotCard({
   name,
   catchphrase,
@@ -10,7 +12,7 @@ function BotCard({
   selectedBot,
 }) {
   function handleClick() {
-    if (selectedBot.length === 0) {
+    if (!selectedBot.find((bot) => bot.id === id)) {
       setSelectedBot([
         ...selectedBot,
         {
@@ -23,21 +25,6 @@ function BotCard({
           catchphrase: catchphrase,
         },
       ]);
-    } else {
-      if (!selectedBot.find((bot) => bot.id === id)) {
-        setSelectedBot([
-          ...selectedBot,
-          {
-            id: id,
-            name: name,
-            health: health,
-            damage: damage,
-            armor: armor,
-            avatar_url: avatar_url,
-            catchphrase: catchphrase,
-          },
-        ]);
-      }
     }
   }
   return (
