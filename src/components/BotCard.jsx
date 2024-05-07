@@ -9,24 +9,42 @@ function BotCard({
   setSelectedBot,
   selectedBot,
 }) {
+  function handleClick(selectedBot, setSelectedBot) {
+    if (selectedBot.length === 0) {
+      setSelectedBot([
+        ...selectedBot,
+        {
+          id: id,
+          name: name,
+          health: health,
+          damage: damage,
+          armor: armor,
+          avatar_url: avatar_url,
+          catchphrase: catchphrase,
+        },
+      ]);
+    } else {
+      if (!selectedBot.find((bot) => bot.id === id)) {
+        setSelectedBot([
+          ...selectedBot,
+          {
+            id: id,
+            name: name,
+            health: health,
+            damage: damage,
+            armor: armor,
+            avatar_url: avatar_url,
+            catchphrase: catchphrase,
+          },
+        ]);
+      }
+    }
+  }
   return (
     <>
       <div
         className="max-w-sm rounded overflow-hidden shadow-lg bg-green-100"
-        onClick={() => {
-          setSelectedBot([
-            ...selectedBot,
-            {
-              id: id,
-              name: name,
-              health: health,
-              damage: damage,
-              armor: armor,
-              avatar_url: avatar_url,
-              catchphrase: catchphrase,
-            },
-          ]);
-        }}
+        onClick={() => handleClick(selectedBot, setSelectedBot)}
       >
         <img
           className="w-full h-[300px]"

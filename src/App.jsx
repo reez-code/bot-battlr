@@ -5,7 +5,7 @@ import BotCollection from "./components/BotCollection";
 function App() {
   const [bots, setBots] = useState([]);
   const [selectedBot, setSelectedBot] = useState([]);
-  console.log(selectedBot);
+
   useEffect(() => {
     fetch("http://localhost:3000/bots")
       .then((res) => res.json())
