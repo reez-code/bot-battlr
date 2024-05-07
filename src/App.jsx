@@ -7,7 +7,7 @@ function App() {
   const [selectedBot, setSelectedBot] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/bots")
+    fetch("https://my-json-server.typicode.com/reez-code/bot-battlr/bots")
       .then((res) => res.json())
       .then((data) => setBots(data));
   }, []); //dependecy array
