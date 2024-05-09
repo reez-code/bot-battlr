@@ -52,7 +52,11 @@ Javascript
 github.com/reez-code
 video
 
-https://github.com/reez-code/bot-battlr/assets/118674725/23bb9acb-8f51-4d27-b3f2-d5aea0efce18
+
+
+
+
+https://github.com/reez-code/bot-battlr/assets/118674725/e59e9b25-3a26-4cf4-8b1f-db4de5e1ea6e
 
 
 
