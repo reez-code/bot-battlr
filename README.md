@@ -50,3 +50,9 @@ Javascript
 ## Support and contact details
 
 github.com/reez-code
+video
+
+https://github.com/reez-code/bot-battlr/assets/118674725/23bb9acb-8f51-4d27-b3f2-d5aea0efce18
+
+
+
